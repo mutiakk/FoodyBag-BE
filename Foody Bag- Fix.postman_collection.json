@@ -1,0 +1,186 @@
+{
+	"info": {
+		"_postman_id": "014cac7c-c193-4068-b1a5-a0fcb05889b8",
+		"name": "Foody Bag- Fix",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3560/api/listProduct"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Payment-itemList-user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3560/api/listProduct"
+			},
+			"response": []
+		},
+		{
+			"name": "payment list",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3560/api/cart-list/20016251-f7bb-4d2e-8fa7-f7fa34a06deb"
+			},
+			"response": []
+		},
+		{
+			"name": "Get Cart Copy",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3560/api/cart-list/20016251-f7bb-4d2e-8fa7-f7fa34a06deb"
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"neozi\",\r\n    \"password\": \"123456\",\r\n    \"password_repeat\": \"123456\",\r\n    \"fullname\": \"Neozi\",\r\n    \"address\": \"Bojong Gede, Bogor\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3560/api/register"
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"neozi\",\r\n    \"password\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3560/api/login"
+			},
+			"response": []
+		},
+		{
+			"name": "Add To Cart",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idCart\": 1,\r\n    \"qty\":1,\r\n    \"user\": \"20016251-f7bb-4d2e-8fa7-f7fa34a06deb\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3560/api/addToCart"
+			},
+			"response": []
+		},
+		{
+			"name": "Cart Plus / Cart Min",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idCart\": 1,\r\n    \"qty\":1,\r\n    \"user\": \"20016251-f7bb-4d2e-8fa7-f7fa34a06deb\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3560/api/cartPlus"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Item Cart",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:3560/api/cart-list/118"
+			},
+			"response": []
+		},
+		{
+			"name": "payment-fix",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idCart\": 1,\r\n    \"qty\":1,\r\n    \"user\": \"20016251-f7bb-4d2e-8fa7-f7fa34a06deb\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3560/api/cartPlus"
+			},
+			"response": []
+		},
+		{
+			"name": "payment-history",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idCart\": 1,\r\n    \"qty\":1,\r\n    \"user\": \"20016251-f7bb-4d2e-8fa7-f7fa34a06deb\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3560/api/cartPlus"
+			},
+			"response": []
+		}
+	]
+}
